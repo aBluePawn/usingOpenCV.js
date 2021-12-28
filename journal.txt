@@ -1,0 +1,5 @@
+Figure out how to setup the project.
+Start with https://www.digitalocean.com/community/tutorials/introduction-to-computer-vision-in-javascript-using-opencvjs
+https://docs.opencv.org/4.x/d0/d84/tutorial_js_usage.html
+This works... for a simple image. As soon as I've tried to use one of my own images, I see that it doesn't know what to do.
+Before I start to improve it, I want to set up the project to use a node-opencvjs package.
