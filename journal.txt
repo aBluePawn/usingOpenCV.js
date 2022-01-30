@@ -1,5 +1,41 @@
 Figure out how to setup the project.
-Start with https://www.digitalocean.com/community/tutorials/introduction-to-computer-vision-in-javascript-using-opencvjs
+Start with 
+https://www.digitalocean.com/community/tutorials/introduction-to-computer-vision-in-javascript-using-opencvjs
 https://docs.opencv.org/4.x/d0/d84/tutorial_js_usage.html
 This works... for a simple image. As soon as I've tried to use one of my own images, I see that it doesn't know what to do.
 Before I start to improve it, I want to set up the project to use a node-opencvjs package.
+
+I'll use ReactRedux in TypeScript. Start with
+https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/
+while comparing it with my notes from the tsServer project.
+
+The Client side
+From https://github.com/reduxjs/cra-template-redux-typescript
+$ npx create-react-app client --template redux-typescript // from inside usingOpenCV.js
+
+The Server side
+https://blog.logrocket.com/typescript-with-node-js-and-express/
+https://developer.okta.com/blog/2018/11/15/node-express-typescript
+
+$ npm init -y
+
+install typescript
+$ npm i -D typescript ts-node
+
+add type definitions for nodejs
+$ npm i -D @types/node
+
+install express
+$ npm i express
+$ npm i -D @types/express
+
+$ npm i -D nodemon // restart the server after each change
+
+install jest
+$ npm i -D jest ts-jest @types/jest
+and initialize a config file
+$ npx ts-jest config:init
+
+ts-node is not recognized...
+https://stackoverflow.com/questions/44764004/ts-node-is-not-recognized-as-an-internal-or-external-command-operable-program/50454232#50454232
+Solution: use npx
