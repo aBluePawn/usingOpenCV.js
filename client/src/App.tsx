@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
+import MyImage from './features/MyImage/MyImage'
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <MyImage imagePath={process.env.PUBLIC_URL+'flowers.jpg'} imageAltText='flowers.jpg' />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
